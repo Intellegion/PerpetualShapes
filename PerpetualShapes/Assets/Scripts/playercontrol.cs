@@ -37,6 +37,11 @@ public class playercontrol : MonoBehaviour {
                 playercol.color = Color.white;
         }
         transform.Translate(move * sensitivity, 0.0f, 0.0f, Space.World);
+        if(Mathf.Abs(transform.position.x)>=12)
+        {
+            Cursor.visible = true;
+            SceneManager.LoadScene(2);
+        }
     }
     void OnCollisionEnter2D(Collision2D col)
     {
