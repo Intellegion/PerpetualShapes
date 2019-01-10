@@ -7,7 +7,7 @@ public class playercontrol : MonoBehaviour {
     private Rigidbody2D rb;
     public static float score;
     float move;
-    public static float sensitivity = 0.3f;
+    public static float sensitivity = 0.5f;
     private Transform pt;
     public static float hscore = 0;
     // Use this for initialization
@@ -36,7 +36,7 @@ public class playercontrol : MonoBehaviour {
             else
                 playercol.color = Color.white;
         }
-        transform.Translate(move * sensitivity, 0.0f, 0.0f, Space.World);
+        transform.Translate(move * sensitivity*0.5f, 0.0f, 0.0f, Space.World);
         if(Mathf.Abs(transform.position.x)>=12)
         {
             Cursor.visible = true;
