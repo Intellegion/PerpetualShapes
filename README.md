@@ -1,2 +1,3 @@
 # Perpetual Shapes
-First Game
+
+https://intellegion.itch.io/perpetual-shapes
